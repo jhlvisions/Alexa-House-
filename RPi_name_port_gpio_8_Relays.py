@@ -42,31 +42,31 @@ class device_handler(debounce_handler):
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(7), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(7), state) ## State is true/false
-        elif name =="living room":
+        if name =="living room":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(11), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(11), state) ## State is true/false
-        elif name =="office":
+        if name =="office":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(13), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(13), state) ## State is true/false
-        elif name == "room":
+        if name == "room":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(5), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(5), state)  ## State is true/false
-        elif name == "tv":
+        if name == "tv":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(13), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(13), state)  ## State is true/false
-        elif name == "pc":
+        if name == "pc":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(8), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(8), state)  ## State is true/false
-        elif name == "xbox":
+        if name == "xbox":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(12), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(12), state)  ## State is true/false
-        elif name == "light":
+        if name == "light":
             GPIO.setmode(GPIO.BOARD)  ## Use board pin numbering
             GPIO.setup(int(10), GPIO.OUT)  ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(10), state)  ## State is true/false
